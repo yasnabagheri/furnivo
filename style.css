@@ -1,5 +1,129 @@
-* {
+/*CSS variables*/
+:root {
+  --color-primary: #3b5d50;
+  --color-primary-light: #35736e;
+  --color-accent: #f9bf29;
+  --color-accent-light: #facc54;
+  --color-white: #eff2f1;
+  --color-gray-dark: #2f2f2f;
+  --color-gray-base: #6a6a6a;
+  --color-gary-light: #c4c4c4;
+  --text-12: 12px;
+  --text-14: 14px;
+  --text-16: 16px;
+  --text-18: 18px;
+  --text-20: 20px;
+  --text-22: 22px;
+  --text-24: 24px;
+  --text-26: 26px;
+  --text-28: 28px;
+  --text-34: 34px;
+  --text-36: 36px;
+  --text-44: 44px;
+  --text-54: 54px;
+}
+
+*,
+*::after,
+*::before {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-primary);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-header {
+  padding: 30px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo-wrapper h3 {
+  font-weight: 500;
+  font-size: 32px;
+  color: #fff;
+}
+
+.logo-wrapper img {
+  width: 32px;
+}
+
+.main-header nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.main-header nav a {
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+}
+.main-header nav a:hover {
+  text-decoration: underline var(--color-accent) 5px;
+}
+
+.user {
+  display: flex;
+  gap: 15px;
+}
+.user img {
+  /* display: flex;
+  align-items: center; */
+  width: 24px;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 100px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 100px;
+  /* margin-top: 30px; */
+}
+.intro h1 {
+  font-weight: 600;
+  font-size: 54px;
+  color: #fff;
+  width: 419px;
+  line-height: 1.2;
+}
+.button {
+  display: flex;
+  align-items: center;
+  /* justify-content: flex-start; */
+  gap: 14px;
+}
+.btn-shop {
+  padding: 20px 50px;
+  background-color: var(--color-accent);
+  color: #2f2f2f;
+  font-weight: 500;
+  border-radius: 30px;
+  border: none;
+}
+.btn-explore {
+  border: 2px solid var(--color-white);
+  border-radius: 30px;
+  padding: 20px 50px;
+  background-color: transparent;
+  color: #fff;
+}
+#couch {
+  width: 810px;
 }
