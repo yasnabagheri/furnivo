@@ -32,11 +32,11 @@
 }
 
 body {
-  background-color: var(--color-primary);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .main-header {
+  background-color: var(--color-primary);
   padding: 30px 100px;
   display: flex;
   align-items: center;
@@ -84,6 +84,7 @@ body {
 }
 
 .intro {
+  background-color: var(--color-primary);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -109,21 +110,152 @@ body {
   /* justify-content: flex-start; */
   gap: 14px;
 }
+
 .btn-shop {
   padding: 20px 50px;
   background-color: var(--color-accent);
   color: #2f2f2f;
+  font-size: var(--text-16);
   font-weight: 500;
   border-radius: 30px;
   border: none;
+  transition: all 0.4s ease;
 }
+
+.btn-shop:hover {
+  background-color: var(--color-accent-light);
+}
+
 .btn-explore {
-  border: 2px solid var(--color-white);
+  border: 2px solid var(--color-gary-light);
   border-radius: 30px;
   padding: 20px 50px;
   background-color: transparent;
-  color: #fff;
+  color: var(--color-white);
+  font-size: var(--text-16);
+  transition: all 0.4s ease;
 }
 #couch {
   width: 810px;
+}
+
+.top-seller {
+  padding: 50px 100px;
+  background-color: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-seller__content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.top-seller__title {
+  font-weight: 600;
+  font-size: var(--text-34);
+  color: var(--color-gray-dark);
+  width: 340px;
+}
+
+.top-seller__desc {
+  font-size: var(--text-14);
+  color: var(--color-gray-base);
+  font-weight: 400;
+  width: 360px;
+  line-height: 24px;
+}
+
+.top-seller__btn {
+  font-weight: 500;
+  font-size: var(--text-16);
+  color: var(--color-white);
+  border-radius: 30px;
+  padding: 15px 5px;
+  background-color: var(--color-gray-dark);
+  width: 130px;
+  border: none;
+  margin-top: 50px;
+  transition: all 0.4s ease;
+}
+
+.top-seller__btn:hover {
+  cursor: pointer;
+  background-color: var(--color-gray-base);
+}
+
+.top-seller__products {
+  display: flex;
+}
+
+.top-seller__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 44px;
+  padding: 24px 24px 40px 24px;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+}
+
+.top-seller__item:hover {
+  background-color: rgba(53, 115, 110, 0.1);
+  border-radius: 30px;
+}
+
+.product-card__add-btn {
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  left: 50%;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: var(--color-gray-dark);
+  color: var(--color-white);
+  border: none;
+  font-size: var(--text-22);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  /* مخفی کردن دکمه در حالت عادی */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+/* وقتی روی  کارت والد هاور شد، دکمه مثبت ظاهر شود */
+.top-seller__item:hover .product-card__add-btn {
+  opacity: 1;
+  visibility: visible;
+}
+
+.product-card__add-btn:hover {
+  background-color: var(--color-primary);
+  transform: translate(-50%, 50%) scale(1.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.top-seller__item__img {
+  width: 300px;
+}
+
+.top-seller__item figcaption span {
+  display: block;
+  text-align: center;
+}
+
+.top-seller__item figcaption span:first-child {
+  font-size: var(--text-16);
+  font-weight: 600;
+}
+
+.top-seller__item figcaption span:nth-child(2) {
+  font-size: var(--text-18);
+  font-weight: 700;
 }
