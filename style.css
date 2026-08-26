@@ -259,3 +259,95 @@ body {
   font-size: var(--text-18);
   font-weight: 700;
 }
+
+/* کانتینر اصلی بخش */
+.why-choose {
+  background-color: var(--color-white);
+  padding: 50px 100px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.why-choose__container {
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: flex-start; */
+  /* justify-content: space-between; */
+  gap: 60px;
+}
+
+/* عنوان اصلی بخش */
+.why-choose__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.why-choose__title {
+  font-size: var(--text-36);
+  font-weight: 700;
+  color: var(--color-gray-dark);
+}
+
+.why-choose__desc {
+  font-size: var(--text-16);
+  color: var(--color-gray-base);
+  line-height: 1.6;
+  max-width: 465px;
+}
+
+/* ویژگی ها 2 ستونه */
+.why-choose__features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 30px;
+  margin-top: 40px;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.feature-item__icon-wrapper {
+  min-width: 50px;
+  height: 50px;
+  background-color: rgba(53, 115, 110, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-item__icon {
+  width: 25px;
+}
+
+.feature-item__text {
+  font-weight: 400;
+  font-size: var(--text-14);
+  color: var(--color-gray-base);
+  max-width: 230px;
+  line-height: 24px;
+}
+
+.feature-item__title {
+  font-size: var(--text-18);
+  font-weight: 600;
+  color: var(--color-gray-dark);
+  margin-bottom: 5px;
+}
+
+.why-choose__image-wrapper {
+  width: 100%;
+}
+
+.why-choose__image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
