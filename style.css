@@ -351,3 +351,117 @@ body {
   border-radius: 10px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
+
+.about-us {
+  background-color: var(--color-white);
+  padding: 100px 80px;
+}
+
+.about-us__container {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.about-us__gallery {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  height: 520px;
+  /* gap: 5px; */
+}
+
+.about-us__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.about-us__img--large {
+  grid-column: 1/8;
+  grid-row: 1/13;
+}
+
+.about-us__img--small-top {
+  width: 65%;
+  grid-column: 8/13;
+  grid-row: 1/5;
+  margin-left: 15px;
+  /* justify-self: end; */
+}
+
+.about-us__img--small-bottom {
+  width: 90%;
+  grid-column: 7/12;
+  grid-row: 5/13;
+  z-index: 2;
+  transform: translateY(28px);
+}
+
+.about-us__content {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.about-us__title {
+  font-size: var(--text-34);
+  font-weight: 600;
+  color: var(--color-gray-dark);
+  line-height: 1.2;
+  max-width: 370px;
+}
+
+.about-us__desc {
+  font-size: var(--text-16);
+  color: var(--color-gray-base);
+  line-height: 1.6;
+  width: 444px;
+}
+
+.about-us__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px 30px;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 20px 0;
+}
+
+.about-us__list-item {
+  font-size: var(--text-16);
+  color: var(--color-gray-base);
+  line-height: 1.4;
+  position: relative;
+  padding-left: 20px;
+  width: 250px;
+}
+
+.about-us__list-item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 6px;
+  height: 6px;
+  /* background-color: #2b5c54; */
+  background-color: var(--color-primary-light);
+  border-radius: 50%;
+}
+
+.about-us__btn {
+  background-color: var(--color-gray-dark);
+  color: #fff;
+  text-decoration: none;
+  padding: 15px 36px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  max-width: 122px;
+}
+
+.about-us__btn:hover {
+  background-color: var(--color-gray-base);
+}
