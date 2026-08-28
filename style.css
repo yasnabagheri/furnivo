@@ -465,3 +465,48 @@ body {
 .about-us__btn:hover {
   background-color: var(--color-gray-base);
 }
+
+.products {
+  display: flex;
+  padding: 50px 180px;
+  gap: 50px;
+  background-color: var(--color-white);
+}
+
+.product__item {
+  display: flex;
+  gap: 36px;
+}
+
+.product__item__img {
+  width: 120px;
+  background-color: #35736e4d;
+  border-radius: 10px;
+}
+
+.product__item__txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+.product__item__txt h3 {
+  font-size: var(--text-14);
+  font-weight: 700;
+  color: #000;
+}
+
+.product__item__txt p {
+  font-size: var(--text-14);
+  font-weight: 400;
+  color: var(--color-gray-base);
+  max-width: 200px;
+}
+
+.product__item__txt a {
+  font-size: var(--text-12);
+  font-weight: 700;
+  color: var(--color-gray-base);
+  text-decoration: none;
+}
